@@ -1,0 +1,289 @@
+#search {
+  border: 0;
+  outline: none;
+  border-radius: 2px;
+  border-bottom: 2.5px solid rgb(21, 146, 255);
+  border-left: 2.5px solid rgb(21, 146, 255);
+  border-top: 2.5px solid rgb(21, 146, 255);
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  width: 300px;
+  height: 40px;
+  padding-left: 10px;
+  background-color: inherit;
+  margin-left: auto;
+  position: absolute;
+  flex: 1;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.h {
+  width: 1000px;
+  position: relative;
+  margin: auto;
+  margin-top: 45px;
+}
+
+.search {
+  flex: 1;
+  border: 0;
+  background-color: rgb(21, 146, 255);
+  border-bottom: 2.5px solid rgb(21, 146, 255);
+  border-right: 2.5px solid rgb(21, 146, 255);
+  border-top: 2.5px solid rgb(21, 146, 255);
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+  width: 50px;
+  height: 40px;
+  position: absolute;
+  display: inline-block;
+  left: 64%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+#search:hover {
+  outline: none;
+}
+
+.search:hover {
+  background-color: rgb(21, 146, 255);
+}
+
+.nav {
+  position: sticky;
+  top: 0px;
+  background-color: white;
+}
+
+.nav-tabs {
+  background-color: white;
+}
+
+button:hover {
+  background-color: #c1c1c1;
+}
+
+.uper {
+  width: 100%;
+  height: 300px;
+  background-color: #c4c4c4;
+  margin-top: 25.5px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.downer {
+  width: 100%;
+  height: 300px;
+  background-color: #c4c4c4;
+  margin-top: 25.5px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.Con1 {
+  background-image: url("../images/acer_inspire_5_NX.KHJER.004_laptop_black_1-removebg-preview-removebg-preview.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 219px;
+  height: 190px;
+  margin: auto;
+}
+.Con1 p {
+  margin: auto;
+  text-align: center;
+  transform: translateY(190px);
+}
+
+.Con2 {
+  background-image: url("../images/WhatsApp_Image_2024-05-27_at_14.41.35_3feb5018-removebg-preview.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 219px;
+  height: 190px;
+  margin: auto;
+}
+.Con2 p {
+  margin: auto;
+  text-align: center;
+  transform: translateY(190px);
+}
+
+.Con3 {
+  background-image: url("../images/1-198122162147-removebg-preview.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 219px;
+  height: 190px;
+  margin: auto;
+}
+.Con3 p {
+  margin: auto;
+  text-align: center;
+  transform: translateY(190px);
+}
+
+.Con4 {
+  background-image: url("../images/IdeaPad_Gaming_3_16IAH7_Gray_01-removebg-preview.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 219px;
+  height: 190px;
+  margin: auto;
+}
+.Con4 p {
+  margin: auto;
+  text-align: center;
+  transform: translateY(190px);
+}
+
+.burger-icon {
+  display: none;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 550px) {
+  .nav-tabs {
+    flex-direction: row;
+    width: 200vh;
+  }
+  .nav-item:not(.burger-icon) {
+    display: none;
+  }
+  .dropdown-menu {
+    display: none;
+  }
+  .burger-icon {
+    display: block;
+  }
+  .h {
+    margin-left: 0;
+    margin-right: 0;
+    left: -350px;
+  }
+  .h #search {
+    margin: 0;
+  }
+  .h .search {
+    margin: 0;
+  }
+  .body {
+    margin: 0;
+    overflow-Y: hidden;
+    width: 100vh;
+    height: 100vh;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .uper,
+  .downer {
+    flex-direction: column;
+    justify-content: space-around;
+    width: 200vh;
+  }
+  .uper p,
+  .downer p {
+    transform: translateY(30px);
+    transform: translateX(60px);
+  }
+  .Con1,
+  .Con2,
+  .Con3,
+  .Con4,
+  .Con5,
+  .Con6,
+  .Con7,
+  .Con8 {
+    margin-bottom: 10px;
+    margin-left: 0;
+  }
+}
+@media (max-width: 500px) {
+  .Log-in form label input {
+    width: 300px;
+  }
+  .Log-in form label button {
+    width: 300px;
+  }
+}
+.account {
+  border-radius: 3px;
+  background-color: orangered;
+  color: black;
+}
+.account a {
+  text-decoration: none;
+  color: black;
+  width: 100%;
+}
+
+.account:hover {
+  background-color: #c45c00;
+}
+
+form {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Log-in {
+  width: 100%;
+  height: 600px;
+  background-color: #c1c1c1;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap-reverse;
+}
+.Log-in input:hover {
+  outline: none;
+  background-color: inherit;
+}
+.Log-in input {
+  outline: none;
+  box-sizing: border-box;
+  border: none;
+  background-color: inherit;
+  border-bottom: 1px solid black;
+  width: 500px;
+  margin-bottom: 20px;
+}
+.Log-in button {
+  width: 500px;
+  background-color: inherit;
+  border: 0;
+  border-bottom: 1px solid black;
+}
+.Log-in button:hover {
+  background-color: darkgray;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  font-size: large;
+}
+
+.sign-in {
+  margin-bottom: 60px;
+  font-size: 150px;
+}
+
+.i {
+  margin-right: 5px;
+}
+
+.Log {
+  margin-left: auto;
+}
+
+.acc {
+  margin-right: 5px;
+  font-size: 20px;
+}/*# sourceMappingURL=style.css.map */
